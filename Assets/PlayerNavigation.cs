@@ -4,12 +4,13 @@ using System.Collections;
 public class PlayerNavigation : MonoBehaviour {
 
     public Camera cam;
-    public NavMeshAgent navMeshAgent;
+    public UnityEngine.AI.NavMeshAgent navMeshAgent;
+    int myTestint = 90;
 
 	// Use this for initialization
 	void Start () {
         cam = Camera.main;
-        navMeshAgent = GetComponent<NavMeshAgent>();
+        navMeshAgent = GetComponent<UnityEngine.AI.NavMeshAgent>();
     }
 	
 	// Update is called once per frame
